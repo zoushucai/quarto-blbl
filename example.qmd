@@ -1,0 +1,79 @@
+---
+title: "Quarto-blbl Example"
+---
+
+## Heading
+
+短代码
+
+### blbl
+
+始终是以百分比设置视频的宽高, 默认为原视频的 `100%`
+由于要保持视频大小比率不变,因此,只有 `width` 有效,  没有`height`这个参数.
+`blbl` 有两个参数 `width` 和  `align`,`width` 是嵌入页面的百分比(`默认 100%`), 按百分比进行调整, `align` 只有三种: `left(默认), center, right`
+
+- 案例
+
+```{shortcodes=false}
+{{< blbl "https://player.bilibili.com/player.html?aid=828423447&bvid=BV1cu4y1S7Eq&cid=1195297630&page=1&as_wide=1&high_quality=1&danmaku=0">}}
+
+```
+
+{{< blbl "https://player.bilibili.com/player.html?aid=828423447&bvid=BV1cu4y1S7Eq&cid=1195297630&page=1&as_wide=1&high_quality=1&danmaku=0">}}
+
+文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+
+```{shortcodes=false}
+{{< blbl "https://player.bilibili.com/player.html?aid=828423447&bvid=BV1cu4y1S7Eq&cid=1195297630&page=1&as_wide=1&high_quality=1&danmaku=1" width=50>}}
+
+```
+
+{{< blbl "https://player.bilibili.com/player.html?aid=828423447&bvid=BV1cu4y1S7Eq&cid=1195297630&page=1&as_wide=1&high_quality=1&danmaku=1" width=50>}}
+
+文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+
+```{shortcodes=false}
+{{< blbl "https://player.bilibili.com/player.html?aid=828423447&bvid=BV1cu4y1S7Eq&cid=1195297630&page=1&as_wide=1&high_quality=1&danmaku=1" width=50 align="right">}}
+
+```
+
+{{< blbl "https://player.bilibili.com/player.html?aid=828423447&bvid=BV1cu4y1S7Eq&cid=1195297630&page=1&as_wide=1&high_quality=1&danmaku=1" width=50 align="right">}}
+
+文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+
+bilibili 中 好像确定视频只需要两个参数`aid` 和`cid`, 因此这两个参数必不可少
+
+```{shortcodes=false}
+{{< blbl https://player.bilibili.com/player.html?aid=828423447&cid=1195297630 >}}
+```
+{{< blbl https://player.bilibili.com/player.html?aid=828423447&cid=1195297630 >}}
+
+
+### ggb
+ggb 有两个参数 `width` 和  `align` ,width 是嵌入页面的百分比(`默认 100%`), 按百分比进行调整, align 只有三种: `left(默认), center, right`
+
+- 案例 
+
+```{shortcodes=false}
+{{< ggb "https://ggb123.cn/classic/cua4uvzg?embed" >}}
+
+
+{{< ggb "https://www.geogebra.org/classic/pqkxztnm?embed" width=50 align="right">}}
+
+
+```
+
+
+{{< ggb "https://ggb123.cn/classic/cua4uvzg?embed" >}}
+
+文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+
+{{< ggb "https://www.geogebra.org/classic/pqkxztnm?embed" width=50 align="right">}}
+
+文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+
+
+
+
+
+
