@@ -139,7 +139,7 @@ return {
     width = ensurePercentage(width, "100%")
     align = align or "left"
     embed_code = generateEmbedCode(url, width, align)
-    print(embed_code)
+    -- print(embed_code)
 
     return pandoc.RawBlock("html", embed_code)
   end
